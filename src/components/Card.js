@@ -1,6 +1,5 @@
 import React from 'react';
 import {toast} from "react-toastify";
-import { FaCartPlus } from "react-icons/fa6";
 import { BsCartCheckFill } from "react-icons/bs";
 import { BsCartDashFill } from "react-icons/bs";
 
@@ -45,7 +44,7 @@ const Card = (props) => {
 
             <div className="p-4" >
                 <p className="text-white font-semibold text-lg loading-6">{course.title}</p>
-                //<p className="text-[#1faa59] md:font-bold flex items-end justify-end">₹2000/-</p>
+                <p className="text-[#1faa59] md:font-bold flex items-end justify-end">₹2000/-</p>
                 <p className="mt-2 text-white">
                     {
                         course.description.length > 100 ? (`${course.description.substr(0,100)}...`) : (`${course.description}...`)
